@@ -1,0 +1,23 @@
+
+<div class="search">
+    <br>
+<h1>Pokemon Cards</h1>
+<input type="text" [(ngModel)]="searchTerm" (input)="filterCards()" placeholder="Search by name...">
+</div>
+<br>
+<div class="card-container">
+@for (card of filteredCardsList; track card._id) {
+<mat-card class="card" (click)="openBottomSheet(card)">
+    <mat-card-header>
+        <img [src]="card.images.small" alt="card image">
+    </mat-card-header>
+
+</mat-card>
+}
+</div>
+
+<div>
+    @if(loading){
+    <p>Loading...</p>
+    }
+</div>

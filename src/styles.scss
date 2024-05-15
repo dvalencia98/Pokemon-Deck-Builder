@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Global styles */
+
+/* Reset default margin and padding */
+html, body, div, span, app-root {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Box-sizing border-box for all elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Set default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #6a0dad;
+}
+
+/* Set default link styles */
+a {
+  text-decoration: none;
+  color: #007bff;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Set default list styles */
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set default heading styles */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Set default button styles */
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

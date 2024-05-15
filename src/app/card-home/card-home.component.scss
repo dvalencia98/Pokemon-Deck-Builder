@@ -1,0 +1,54 @@
+
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 900;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.card-details {
+  padding: 10px;
+}
+
+.card-details h3 {
+  margin-top: 0;
+}
+
+.card-details p {
+  margin: 5px 0;
+}
+
+.card-details button {
+  margin-top: 10px;
+}
+
+.search{
+  text-align: center;
+  background-color: aquamarine;
+  
+}
+
+h1 {
+  font-family: fantasy;
+  font-size: 500%;
+  margin-top: 100px;
+}

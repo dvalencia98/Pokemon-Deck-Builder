@@ -1,0 +1,14 @@
+<mat-card class="card">
+    <mat-card-header>
+        <img mat-card-image [src]="card.images.small" alt="{{ card.name }}">
+    </mat-card-header>
+    <mat-card-content>
+        <p>Name: {{ card.name }}</p>
+        <p>Rarity: {{ card.rarity }}</p>
+        <p>Set: {{ card.set.name }}</p>
+        <p>Artist: {{ card.artist }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button (click)="saveCardToDatabase()">Save to Database</button>
+    </mat-card-actions>
+</mat-card>
